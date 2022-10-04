@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/goToBackIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/go_to_back_icon"
+            android:src="@drawable/ic_baseline_arrow_back" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/sign_up"
+            android:textColor="#7364FF"
+            android:textSize="42sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
+            android:text="@string/username"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userNameText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/customet"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_light"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
+            android:text="@string/email_adress"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eMailText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/customet"
+                android:fontFamily="@font/open_sans_light"
+                android:hint=""
+                android:inputType="textEmailAddress"
+                android:textColorHint="#B4B4B4"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
+            android:text="@string/password"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#B4B4B4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/customet"
+                android:fontFamily="@font/open_sans_light"
+                android:hint=""
+                android:inputType="textPassword"
+                android:textColorHint="#B4B4B4"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/background_login_button"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColorHint="#B4B4B4"
+            android:textSize="18sp"
+            app:backgroundTint="#7364FF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cityscapestown"
+        android:contentDescription="@string/the_city_view_illustration" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

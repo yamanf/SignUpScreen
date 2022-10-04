@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SignUpExample</string>
+    <string name="welcome_to_bauss">Welcome to</string>
+    <string name="bauuss">Bauuss</string>
+    <string name="log_in">Log in</string>
+    <string name="email_adress">Email Adress</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="furkanyaman_aol_com">furkanyaman@aol.com</string>
+    <string name="password">Password</string>
+    <string name="_8_characters">8+ characters</string>
+    <string name="go_to_back_icon">Go to Back Icon</string>
+    <string name="the_city_view_illustration">The City View Illustration</string>
+</resources>
