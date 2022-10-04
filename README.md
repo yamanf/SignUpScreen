@@ -5,4 +5,4 @@ This application is simply a figma design that has been added to the Android Kot
 
 The Figma design is available at the link below.
 https://www.figma.com/file/WreNaQRdE2pR9afnH9KMBK/Sign-up-Page-(Community)
-<img src="screenshoot.jpg" title="Screenshoot">
+<img src="https://github.com/yamanf/SignUpScreen/blob/main/Screenshoot.png" title="Screenshoot">
